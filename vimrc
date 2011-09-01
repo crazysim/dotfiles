@@ -89,6 +89,6 @@ au FocusLost * :wa
 set background=dark
 colorscheme solarized
 
-" Recovery killed me once and I'll trust version control more
+" Recovery killed me once and I trust version control more
 set noswapfile
 
