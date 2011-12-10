@@ -8,6 +8,7 @@ editor = vim -f
 user = crazysim
 [alias]
 c = commit -m
+ca = commit -a -m
 a = add
 aa= !git add -u && git add . && git status
 cob = checkout -b
