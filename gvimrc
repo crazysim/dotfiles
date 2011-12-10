@@ -1,10 +1,10 @@
-if filereadable(expand("~/.vimrc"))
-  source ~/.gvimrc
-endif
-
+" This section only works in gvimrc
 if has("gui_macvim")
-    macmenu &File.New\ Tab key=<nop>
-    map <D-t> :CommandT<CR>
+
+    " Command-T for CommandT
+    macmenu &File.New\ Tab key=<D-T>
+    map <D-t> CommandTFlush<CR>:CommandT<CR>
+    imap <D-t> <Esc>:CommandTFlush<CR>:CommandT<CR>
 
     colorscheme solarized
     " Fullscreen takes up entire screen
