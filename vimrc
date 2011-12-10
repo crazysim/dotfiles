@@ -67,6 +67,7 @@ set ruler
 set ttyfast
 set cursorline
 set relativenumber
+set smartindent
 
 " Change Leader to ,
 let mapleader = ","
