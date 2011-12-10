@@ -38,7 +38,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-abolish'
 "Bundle 'LustyExplorer'
 
-filetype plugin indent on     " required! 
+filetype plugin indent on     " required ! 
 "
 " Brief help
 " :BundleList          - list configured bundles
@@ -93,9 +93,6 @@ set listchars=tab:▸\ ,eol:¬
 " Save on loss of focus
 au FocusLost * :wa
 
-"LustyExplorer sez I should do this
-" set hidden
-
 " My own customizations from here on out that aren't from anywhere in particular. 
 " Nelson
 
@@ -119,12 +116,14 @@ if has("gui_macvim")
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> :CommandT<CR>
   
   " Command-/ to toggle comments
   map <D-/> <plug>NERDCommenterToggle<CR>
   imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
 
-  " Command-][ to increase/decrease indentation
+    " Command-][ to increase/decrease indentation
   vmap <D-]> >gv
   vmap <D-[> <gv
 
