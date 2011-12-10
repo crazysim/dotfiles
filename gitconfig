@@ -1,0 +1,8 @@
+[user]
+	name = Nelson Chen
+	email = crazysim@gmail.com
+[core]
+	excludesfile = /Users/nelson/.gitignore
+	editor = vim -f
+[github]
+	user = crazysim
