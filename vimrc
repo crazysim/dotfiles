@@ -28,7 +28,15 @@ Bundle 'thinca/vim-quickrun'
 Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
 Bundle 'taglist.vim'
-Bundle 'UltiSnips'
+"Bundle 'UltiSnips'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'Rename'
+Bundle 'Raimondi/delimitMate'
+Bundle 'thinca/vim-logcat'
+Bundle 'Rip-Rip/clang_complete'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-abolish'
+"Bundle 'LustyExplorer'
 
 filetype plugin indent on     " required! 
 "
@@ -46,7 +54,7 @@ filetype plugin indent on     " required!
 " Tabs
 set tabstop=4
 set shiftwidth=4
-set tabstop=4
+set softtabstop=4
 set expandtab
 
 " Sanity
@@ -85,11 +93,13 @@ set listchars=tab:▸\ ,eol:¬
 " Save on loss of focus
 au FocusLost * :wa
 
+"LustyExplorer sez I should do this
+" set hidden
+
 " My own customizations from here on out that aren't from anywhere in particular. 
 " Nelson
 
 set background=dark
-colorscheme solarized
 " Anti conflict with command t
 let g:EasyMotion_leader_key = '<Leader>m' 
 
@@ -105,18 +115,14 @@ noremap <leader>y :CommandTFlush<cr>
 
 " MacVIM specifics from Janus
 if has("gui_macvim")
+  colorscheme solarized
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
-  " Command-T for CommandT
-  macmenu &File.New\ Tab key=<D-T>
-  map <D-t> :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
   
   " Command-/ to toggle comments
   map <D-/> <plug>NERDCommenterToggle<CR>
   imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
-
 
   " Command-][ to increase/decrease indentation
   vmap <D-]> >gv
@@ -147,3 +153,16 @@ if has("gui_macvim")
   map  <D-9> 9gt
   imap <D-9> <Esc>9gt
 endif
+
+" Always show a status line
+
+set laststatus=2
+
+" Have NERDCommenter use spaces when commenting like textmate
+let NERDSpaceDelims=1
+
+" Use wildmenu
+set wildmenu
+
+" Don't show @ signs when wrapping super line lines
+set display=lastline
