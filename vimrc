@@ -122,3 +122,15 @@ set wildmenu
 
 " Don't show @ signs when wrapping super line lines
 set display=lastline
+
+if has("gui_running")
+  " Automatically resize splits when resizing MacVim window
+  autocmd VimResized * wincmd =
+endif
+
+" Directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
+
+let macvim_hig_shift_movement = 1
+
