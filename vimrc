@@ -57,6 +57,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" Set ruby files to use different settings for spaces.
+autocmd FileType ruby setlocal sw=2 sts=2 et
+
 " Sanity
 
 set encoding=utf-8
