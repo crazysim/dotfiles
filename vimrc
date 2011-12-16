@@ -8,35 +8,90 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
-"
-" original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'alderz/smali-vim'
-Bundle 'nathanaelkane/vim-indent-guides'
+" My Bundles and real vimrc starting here:
+
+" "LIBRARIESISH:
+" Allows more repeating with plugins
 Bundle 'repeat.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'file-line'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'ZoomWin'
+
+" Not sure what this provides but it's here anyway
 Bundle 'tlib'
-" Bundle 'tComment'
+
+" Not sure either.
 Bundle 'L9'
+
+" VCS SUPPORT:
+Bundle 'tpope/vim-fugitive'
+
+" VISUAL STUFF:
+" I like this theme
+Bundle 'altercation/vim-colors-solarized'
+
+" Some indents
+Bundle 'nathanaelkane/vim-indent-guides'
+
+" Allows me to operate on surround characters
+Bundle 'tpope/vim-surround'
+
+" You can open a file to a line!
+Bundle 'file-line'
+
+" Easy motion for going to some place without guessing how many keys to press
+Bundle 'Lokaltog/vim-easymotion'
+
+" <C-W> o toggle to zoom windows
+Bundle 'ZoomWin'
+
+" EDITING STUFF:
+" It comments a bit more crazy than NERDCommenter
+Bundle 'tComment'
+
+" Use :Extradite to get a nice log
 Bundle 'int3/vim-extradite'
-Bundle 'thinca/vim-quickrun'
+
+" I don't use this. It's to quicky run something.
+" Bundle 'thinca/vim-quickrun'
+
+" It's Command T, or leader j. Find a file quickly
 Bundle 'wincent/Command-T'
-Bundle 'scrooloose/nerdtree'
-Bundle 'taglist.vim'
+
+" I don't use this either. I use a real file browser
+" Bundle 'scrooloose/nerdtree'
+
+" Deprecated in favor of the new TagBar
+" Bundle 'taglist.vim'
+
+" Got snippets. Tab to complete
 Bundle 'rygwdn/ultisnips'
+
+" It comments by cmd / 
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'Rename'
-Bundle 'Raimondi/delimitMate'
-Bundle 'thinca/vim-logcat'
-Bundle 'Rip-Rip/clang_complete'
-Bundle 'tpope/vim-rails'
+
+" Allows me to clean up crummy mispellings
 Bundle 'tpope/vim-abolish'
-"Bundle 'LustyExplorer'
+
+" I can rename a file with :Rename in place!
+Bundle 'Rename'
+
+" Does autoclosing of brackets and parenthesis
+Bundle 'Raimondi/delimitMate'
+
+" TagBar is the new TagList
+Bundle 'majutsushi/tagbar'
+
+" FRAMEWORKS:
+" Clang for C and C++
+Bundle 'Rip-Rip/clang_complete'
+
+" Ruby on Rails
+Bundle 'tpope/vim-rails'
+
+" SYNTAX:
+" Handy for Android takeapart
+Bundle 'alderz/smali-vim'
+
+" Android Logcat syntax
+Bundle 'thinca/vim-logcat'
 
 filetype plugin indent on     " required ! 
 "
