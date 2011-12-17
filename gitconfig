@@ -15,3 +15,6 @@ cob = checkout -b
 up = !git fetch origin && git rebase origin/master
 ir = !git rebase -i origin/master
 done = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
+	ctags = !.git/hooks/ctags
+[init]
+	templatedir = ~/.git_template
