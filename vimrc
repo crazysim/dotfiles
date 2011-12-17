@@ -155,6 +155,15 @@ au FocusLost * :wa
 " My own customizations from here on out that aren't from anywhere in particular. 
 " Nelson
 
+" Tags
+" Won't need this because of
+" http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
+" saying I won't need this because of fugitive.vim
+" set tags=./tags;$HOME          " walk directory tree upto $HOME looking for tags
+
+" TagBar Settings
+
+
 set background=dark
 " Anti conflict with command t
 let g:EasyMotion_leader_key = '<Leader>m' 
