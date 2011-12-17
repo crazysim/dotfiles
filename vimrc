@@ -163,6 +163,16 @@ au FocusLost * :wa
 
 " TagBar Settings
 
+let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
+let g:tagbar_compact = 0
+let g:tagbar_expand = 0
+
+"Open/focus tagbar
+nnoremap <silent> <leader>c   :TagbarOpen<CR>
+"Close it
+"(also possible by pressing "q" while tagbar is focused)
+" nnoremap <silent> <leader>c :TagbarClose<CR>
 
 set background=dark
 " Anti conflict with command t
