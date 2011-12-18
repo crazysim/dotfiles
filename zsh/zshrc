@@ -21,7 +21,7 @@ export ZSH_THEME="crazysim"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rvm gem ruby git brew osx github autojump ant vi-mode pip)
+plugins=(rails rvm gem ruby git brew osx github autojump ant vi-mode pip)
 
 source $ZSH/oh-my-zsh.sh
 
