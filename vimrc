@@ -42,6 +42,15 @@ Bundle 'Lokaltog/vim-easymotion'
 " <C-W> o toggle to zoom windows
 Bundle 'ZoomWin'
 
+" Lusty stuff for mojing around with <leader> l {jfrbg}
+" No longer used due to ctrl-p being an all in one
+" Bundle 'LustyExplorer'
+Bundle 'LustyJuggler'
+
+" Ctrl P
+" juggles with ctrl p
+Bundle 'kien/ctrlp.vim'
+
 " EDITING STUFF:
 " It comments a bit more crazy than NERDCommenter
 Bundle 'tComment'
@@ -167,6 +176,10 @@ let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 0
 let g:tagbar_expand = 0
+
+" Ctrl-P settings
+let g:ctrlp_extentions=['tag']
+nnoremap <silent> <c-p> :CtrlPTag
 
 "Open/focus tagbar
 nnoremap <silent> <leader>c   :TagbarOpen<CR>
