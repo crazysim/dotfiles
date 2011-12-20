@@ -161,6 +161,10 @@ set listchars=tab:▸\ ,eol:¬
 " Save on loss of focus
 au FocusLost * :wa
 
+" Load when something outside vim changes the file. More IntelliJ like.
+" Source: http://stackoverflow.com/a/2496570/286021
+set autoread
+
 " My own customizations from here on out that aren't from anywhere in particular. 
 " Nelson
 
