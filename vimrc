@@ -88,6 +88,9 @@ Bundle 'Raimondi/delimitMate'
 " TagBar is the new TagList
 Bundle 'majutsushi/tagbar'
 
+" Ruby endings
+Bundle 'tpope/vim-endwise'
+
 " FRAMEWORKS:
 " Clang for C and C++
 Bundle 'Rip-Rip/clang_complete'

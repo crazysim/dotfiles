@@ -62,3 +62,5 @@ source /usr/local/share/python/virtualenvwrapper.sh
 
 export EDITOR="vim"
 
+# Disable ZSH update prompt and be more Chrome-like and just update, damn it.
+export DISABLE_UPDATE_PROMPT="true"
