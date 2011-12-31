@@ -105,6 +105,9 @@ Bundle 'alderz/smali-vim'
 " Android Logcat syntax
 Bundle 'thinca/vim-logcat'
 
+" Slim Template Syntax
+Bundle 'bbommarito/vim-slim'
+
 filetype plugin indent on     " required ! 
 "
 " Brief help
