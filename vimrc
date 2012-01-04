@@ -133,6 +133,9 @@ set expandtab
 " Set ruby files to use different settings for spaces.
 autocmd FileType ruby setlocal sw=2 sts=2 et
 
+" Read MML files for Carto Tilemill with JSON aka Javascript
+autocmd BufNewFile,BufRead *.mml set ft=javascript
+
 " Sanity
 
 set encoding=utf-8
