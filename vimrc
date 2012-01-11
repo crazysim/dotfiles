@@ -241,3 +241,6 @@ set directory=~/.vim/backup
 
 let macvim_hig_shift_movement = 1
 
+" Makefile no expandtab
+autocmd FileType make setlocal noexpandtab
+
