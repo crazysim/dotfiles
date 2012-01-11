@@ -28,6 +28,11 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 
+# Virtualenv Stuff
+export WORKON_HOME=$HOME/.virtualenvs
+# source /usr/local/share/python/virtualenvwrapper.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
 # Making sure these are in there
 # Android
 export PATH=$HOME/android-ndk-r5b:$HOME/android-sdk-mac_86/platform-tools:$PATH
@@ -55,10 +60,6 @@ export ANDROID_HOME=/Users/nelson/android-sdk-mac_86/
 
 export PATH=/usr/local/share/python:$PATH
 
-# Virtualenv Stuff
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/share/python/virtualenvwrapper.sh
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 export EDITOR="vim"
 
