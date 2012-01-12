@@ -111,6 +111,9 @@ Bundle 'bbommarito/vim-slim'
 " Carto for Tilemill stuff
 Bundle 'crazysim/vim-carto'
 
+" This one for Scala Stuff
+Bundle 'bmatheny/vim-scala'
+
 filetype plugin indent on     " required ! 
 "
 " Brief help
