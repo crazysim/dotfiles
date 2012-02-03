@@ -37,7 +37,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 # Android
 export PATH=$HOME/android-ndk-r5b:$HOME/android-sdk-mac_86/platform-tools:$PATH
 # Probably Xcode
-export PATH=/Developers/usr/bin:$PATH
+export PATH=/Developer/usr/bin:$PATH
 # System Stuff
 export PATH=/usr/bin:/bin:/usr/sbin/:/sbin:/usr/X11/bin:$PATH
 
