@@ -51,6 +51,9 @@ Bundle 'LustyJuggler'
 " juggles with ctrl p
 Bundle 'kien/ctrlp.vim'
 
+" Smart Buffer Delete
+Bundle 'orftz/sbd.vim'
+
 " EDITING STUFF:
 " It comments a bit more crazy than NERDCommenter
 Bundle 'tComment'
@@ -246,4 +249,7 @@ let macvim_hig_shift_movement = 1
 
 " Makefile no expandtab
 autocmd FileType make setlocal noexpandtab
+
+"Smart buffer delete
+nnoremap <silent> <leader>bd :Sbd<CR>
 
