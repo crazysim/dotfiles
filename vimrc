@@ -253,3 +253,6 @@ autocmd FileType make setlocal noexpandtab
 "Smart buffer delete
 nnoremap <silent> <leader>bd :Sbd<CR>
 
+
+au BufNewFile,BufReadPost *.ypp set ft=yacc
+
