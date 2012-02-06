@@ -94,6 +94,9 @@ Bundle 'majutsushi/tagbar'
 " Ruby endings
 Bundle 'tpope/vim-endwise'
 
+" Tabularize because i use spaces
+Bundle 'godlygeek/tabular'
+
 " FRAMEWORKS:
 " Clang for C and C++
 Bundle 'Rip-Rip/clang_complete'
