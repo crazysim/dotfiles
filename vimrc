@@ -262,5 +262,8 @@ nnoremap <silent> <leader>bd :Sbd<CR>
 " YACC for ypp
 au BufNewFile,BufReadPost *.ypp set ft=yacc
 
+" Fancy Powerline Symbols
+let g:Powerline_symbols = 'fancy'
+
 
 
