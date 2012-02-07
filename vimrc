@@ -54,6 +54,9 @@ Bundle 'kien/ctrlp.vim'
 " Smart Buffer Delete
 Bundle 'orftz/sbd.vim'
 
+" The nicer powerbar line thing
+Bundle 'Lokaltog/vim-powerline'
+
 " EDITING STUFF:
 " It comments a bit more crazy than NERDCommenter
 Bundle 'tComment'
