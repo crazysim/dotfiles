@@ -265,5 +265,6 @@ au BufNewFile,BufReadPost *.ypp set ft=yacc
 " Fancy Powerline Symbols
 let g:Powerline_symbols = 'fancy'
 
-
+" Force save as sudo
+cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
 
