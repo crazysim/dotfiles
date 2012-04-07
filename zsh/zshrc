@@ -65,3 +65,5 @@ export EDITOR="vim"
 
 # Disable ZSH update prompt and be more Chrome-like and just update, damn it.
 export DISABLE_UPDATE_PROMPT="true"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
