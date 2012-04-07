@@ -89,7 +89,8 @@ Bundle 'tpope/vim-abolish'
 Bundle 'Rename'
 
 " Does autoclosing of brackets and parenthesis
-Bundle 'Raimondi/delimitMate'
+" Bundle 'Raimondi/delimitMate'
+Bundle 'kana/vim-smartinput'
 
 " TagBar is the new TagList
 Bundle 'majutsushi/tagbar'
