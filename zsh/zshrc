@@ -67,3 +67,5 @@ export EDITOR="vim"
 export DISABLE_UPDATE_PROMPT="true"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+alias shmagnum="mosh magnum -p 60000"
