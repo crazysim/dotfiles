@@ -77,7 +77,7 @@ Bundle 'wincent/Command-T'
 " Bundle 'taglist.vim'
 
 " Got snippets. Tab to complete
-"Bundle 'rygwdn/ultisnips'
+Bundle 'SirVer/ultisnips'
 
 " It comments by cmd / 
 Bundle 'scrooloose/nerdcommenter'
