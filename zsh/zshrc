@@ -57,3 +57,5 @@ export EDITOR="vim"
 export DISABLE_UPDATE_PROMPT="true"
 
 alias shmagnum="mosh magnum -p 60000"
+
+eval "$(rbenv init -)"
