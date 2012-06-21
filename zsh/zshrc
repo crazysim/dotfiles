@@ -27,7 +27,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-# source /usr/local/share/python/virtualenvwrapper.sh
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 # Making sure these are in there
@@ -40,6 +39,10 @@ export PATH=/usr/local/sbin:$PATH
 
 # Homebrew Python
 export PATH=/usr/local/share/python3:$PATH
+
+# Virtualenv
+VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+source `which virtualenvwrapper.sh`
 
 # Personal Binaries
 export PATH=$HOME/bin:$PATH
