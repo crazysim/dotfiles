@@ -2,6 +2,7 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.dotfiles/vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -268,4 +269,6 @@ let g:Powerline_symbols = 'fancy'
 
 " Force save as sudo
 cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
+
+let g:UltiSnipsSnippetsDir = '~/.dotfiles/vim/ultisnips'
 
