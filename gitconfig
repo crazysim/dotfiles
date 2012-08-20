@@ -6,6 +6,8 @@
 editor = vim -f
 [github]
 user = crazysim
+password = !security 2>&1 >/dev/null find-internet-password -gs github.com | cut -d : -f 2 - | sed -e s/\"//g
+
 [alias]
 c = commit -m
 ca = commit -a -m

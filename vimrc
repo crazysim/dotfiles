@@ -124,6 +124,9 @@ Bundle 'crazysim/vim-carto'
 " This one for Scala Stuff
 Bundle 'bmatheny/vim-scala'
 
+" This one for Coffeescript
+Bundle 'kchmck/vim-coffee-script'
+
 filetype plugin indent on     " required ! 
 "
 " Brief help
