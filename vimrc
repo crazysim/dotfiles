@@ -39,8 +39,11 @@ Bundle 'file-line'
 " Easy motion for going to some place without guessing how many keys to press
 Bundle 'Lokaltog/vim-easymotion'
 
+" DWM clone
+Bundle 'spolu/dwm.vim'
+
 " <C-W> o toggle to zoom windows
-Bundle 'ZoomWin'
+" Bundle 'ZoomWin'
 
 " Lusty stuff for mojing around with <leader> l {jfrbg}
 " No longer used due to ctrl-p being an all in one
