@@ -64,6 +64,4 @@ eval "$(rbenv init -)"
 # API Keys
 source $HOME/.api_keys
 
-# Postgres APP
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
