@@ -61,3 +61,5 @@ eval "$(rbenv init -)"
 
 [[ -s $HOME/.pythonz/etc/bashrc ]] && source $HOME/.pythonz/etc/bashrc
 
+# API Keys
+source $HOME/.api_keys
