@@ -64,4 +64,4 @@ eval "$(rbenv init -)"
 # API Keys
 source $HOME/.api_keys
 
-
+export PGDATA="/usr/local/var/postgres"
