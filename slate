@@ -1,2 +1,15 @@
+config switchShowTitles true
+config switchStopRepeatAtEdge false
+config switchBackgroundColor 50;53;58;0.8
+
 bind /:cmd;ctrl hint ASDFGHJKL
+bind left:cmd;alt corner top-left resize:screenSizeX/2;screenSizeY
+bind right:cmd;alt corner bottom-right resize:screenSizeX/2;screenSizeY
+bind up:cmd;alt corner top-right resize:screenSizeX;screenSizeY/2
+bind down:cmd;alt corner bottom-left resize:screenSizeX;screenSizeY/2
+bind left:ctrl;cmd;alt corner top-left resize:screenSizeX/2;screenSizeY/2
+bind right:ctrl;cmd;alt corner bottom-right resize:screenSizeX/2;screenSizeY/2
+bind up:ctrl;cmd;alt corner top-right resize:screenSizeX/2;screenSizeY/2
+bind down:ctrl;cmd;alt corner bottom-left resize:screenSizeX/2;screenSizeY/2
+bind f:cmd;alt  corner top-left resize:screenSizeX;screenSizeY
 
