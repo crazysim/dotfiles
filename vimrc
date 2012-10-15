@@ -231,10 +231,10 @@ let g:EasyMotion_leader_key = '<Leader>m'
 """"""""""""""""""""""""""""""
 " => Command-T
 """"""""""""""""""""""""""""""
-let g:CommandTMaxHeight = 15
-set wildignore+=*.o,*.obj,.git,*.pyc
-noremap <leader>j :CommandTFlush<cr>:CommandT<cr>
-noremap <leader>y :CommandTFlush<cr>
+" let g:CommandTMaxHeight = 15
+" set wildignore+=*.o,*.obj,.git,*.pyc
+" noremap <leader>j :CommandTFlush<cr>:CommandT<cr>
+" noremap <leader>y :CommandTFlush<cr>
 
 " Always show a status line
 
