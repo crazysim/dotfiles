@@ -71,7 +71,7 @@ Bundle 'int3/vim-extradite'
 " Bundle 'thinca/vim-quickrun'
 
 " It's Command T, or leader j. Find a file quickly
-Bundle 'wincent/Command-T'
+" Bundle 'wincent/Command-T'
 
 " I don't use this either. I use a real file browser
 " Bundle 'scrooloose/nerdtree'
