@@ -91,6 +91,9 @@ Bundle 'tpope/vim-abolish'
 " I can rename a file with :Rename in place!
 Bundle 'Rename'
 
+" Fix whitespace
+Bundle 'bronson/vim-trailing-whitespace'
+
 " Does autoclosing of brackets and parenthesis
 " Bundle 'Raimondi/delimitMate'
 Bundle 'kana/vim-smartinput'
