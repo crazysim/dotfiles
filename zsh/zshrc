@@ -78,3 +78,4 @@ export PATH="/Developer/NVIDIA/CUDA-5.0/bin:$PATH"
 
 # alias pview="python ~/code/sr/ric/remote_capture/pickle_to_cap.py"
 
+export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
