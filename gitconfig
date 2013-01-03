@@ -2,7 +2,7 @@
 	name = Nelson Chen
 	email = crazysim@gmail.com
 [core]
-    excludesfile = /Users/nelson/.gitignore
+	excludesfile = /Users/nelson/.gitignore
 editor = vim -f
 [github]
 user = crazysim
@@ -24,7 +24,7 @@ done = !git fetch && git rebase origin/master && git checkout master && git merg
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 [push]
 	default = matching
