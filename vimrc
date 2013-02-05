@@ -121,9 +121,6 @@ Bundle 'alderz/smali-vim'
 " Android Logcat syntax
 Bundle 'thinca/vim-logcat'
 
-" Slim Template Syntax
-Bundle 'bbommarito/vim-slim'
-
 " Carto for Tilemill stuff
 Bundle 'crazysim/vim-carto'
 
