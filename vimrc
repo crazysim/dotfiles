@@ -155,6 +155,9 @@ autocmd FileType ruby setlocal sw=2 sts=2 et
 " Read MML files for Carto Tilemill with JSON aka Javascript
 autocmd BufNewFile,BufRead *.mml set ft=javascript
 
+" Read Salt Stack SLS files as YAML
+autocmd BufNewFile,BufRead *.sls set ft=yaml sw=2 sts=2 et
+
 " Sanity
 
 set encoding=utf-8
