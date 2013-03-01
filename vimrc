@@ -277,3 +277,6 @@ let g:Powerline_symbols = 'fancy'
 
 " Force save as sudo
 cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
+
+" Disable Vim Swapfile and just use git for everything
+set noswapfile
