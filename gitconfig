@@ -30,3 +30,5 @@ done = !git fetch && git rebase origin/master && git checkout master && git merg
 	default = matching
 [credential]
 	helper = osxkeychain
+[color]
+	diff = true
