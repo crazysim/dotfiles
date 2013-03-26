@@ -39,3 +39,6 @@ tags
 
 # Ignore virtualenv .venv
 .venv
+
+# IntelliJ?
+out/
