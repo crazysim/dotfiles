@@ -23,9 +23,6 @@ export DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(rails3 gem ruby git brew osx github autojump ant vi-mode bundler pip history-substring-search heroku vagrant virtuanenv vundle virtualenvwrapper)
 
-source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
@@ -81,3 +78,6 @@ export PATH="/Developer/NVIDIA/CUDA-5.0/bin:$PATH"
 export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
 
 export SBT_OPTS='-noverify -javaagent:/Users/nelson/bin/jrebel.jar -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M'
+
+source $ZSH/oh-my-zsh.sh
+
