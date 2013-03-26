@@ -36,3 +36,6 @@ tags
 # Ruby plugin IntelliJ
 .generators
 .rakeTasks
+
+# Ignore virtualenv .venv
+.venv
