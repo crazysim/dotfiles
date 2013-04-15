@@ -130,6 +130,9 @@ Bundle 'bmatheny/vim-scala'
 " This one for Coffeescript
 Bundle 'kchmck/vim-coffee-script'
 
+" Markdown
+Bundle 'tpope/vim-markdown'
+
 filetype plugin indent on     " required ! 
 "
 " Brief help
@@ -271,6 +274,9 @@ nnoremap <silent> <leader>bd :Sbd<CR>
 
 " YACC for ypp
 au BufNewFile,BufReadPost *.ypp set ft=yacc
+
+" Markdown
+au BufRead,BufNewFile *.md set filetype=markdown
 
 " Fancy Powerline Symbols
 let g:Powerline_symbols = 'fancy'
