@@ -81,3 +81,7 @@ export SBT_OPTS='-noverify -javaagent:/Users/nelson/bin/jrebel.jar -XX:+UseConcM
 
 source $ZSH/oh-my-zsh.sh
 
+function pf_open () {
+        open -a "Path Finder.app" $PWD
+}
+
