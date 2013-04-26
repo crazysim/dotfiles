@@ -145,21 +145,12 @@ filetype plugin indent on     " required !
 " NOTE: comments after Bundle command are not allowed.
 
 " Steve Losh (http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
-" Modified for me
 " Tabs
+"
 set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
-
-" Set ruby files to use different settings for spaces.
-autocmd FileType ruby setlocal sw=2 sts=2 et
-
-" Read MML files for Carto Tilemill with JSON aka Javascript
-autocmd BufNewFile,BufRead *.mml set ft=javascript
-
-" Read Salt Stack SLS files as YAML
-autocmd BufNewFile,BufRead *.sls set ft=yaml sw=2 sts=2 et
 
 " Sanity
 
@@ -201,9 +192,6 @@ au FocusLost * :wa
 " Load when something outside vim changes the file. More IntelliJ like.
 " Source: http://stackoverflow.com/a/2496570/286021
 set autoread
-
-" My own customizations from here on out that aren't from anywhere in particular.
-" Nelson
 
 " Tags
 " Won't need this because of
@@ -266,17 +254,10 @@ set directory=~/.vim/backup
 
 let macvim_hig_shift_movement = 1
 
-" Makefile no expandtab
-autocmd FileType make setlocal noexpandtab
 
 "Smart buffer delete
 nnoremap <silent> <leader>bd :Sbd<CR>
 
-" YACC for ypp
-au BufNewFile,BufReadPost *.ypp set ft=yacc
-
-" Markdown
-au BufRead,BufNewFile *.md set filetype=markdown
 
 " Fancy Powerline Symbols
 let g:Powerline_symbols = 'fancy'
@@ -286,3 +267,25 @@ cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
 
 " Disable Vim Swapfile and just use git for everything
 set noswapfile
+
+"""
+File specific settings
+"""
+
+" Set ruby files to use different settings for spaces.
+autocmd FileType ruby setlocal sw=2 sts=2 et
+
+" Read MML files for Carto Tilemill with JSON aka Javascript
+autocmd BufNewFile,BufRead *.mml set ft=javascript
+
+" Read Salt Stack SLS files as YAML
+autocmd BufNewFile,BufRead *.sls set ft=yaml sw=2 sts=2 et
+"
+" YACC for ypp
+au BufNewFile,BufReadPost *.ypp set ft=yacc
+
+" Markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+"
+" Makefile no expandtab
+autocmd FileType make setlocal noexpandtab
