@@ -269,7 +269,7 @@ cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
 set noswapfile
 
 """
-File specific settings
+""" File specific settings
 """
 
 " Set ruby files to use different settings for spaces.
