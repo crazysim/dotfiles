@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles and real vimrc starting here:
@@ -82,7 +82,7 @@ Bundle 'int3/vim-extradite'
 " Got snippets. Tab to complete
 Bundle 'SirVer/ultisnips'
 
-" It comments by cmd / 
+" It comments by cmd /
 Bundle 'scrooloose/nerdcommenter'
 
 " Allows me to clean up crummy mispellings
@@ -133,7 +133,7 @@ Bundle 'kchmck/vim-coffee-script'
 " Markdown
 Bundle 'tpope/vim-markdown'
 
-filetype plugin indent on     " required ! 
+filetype plugin indent on     " required !
 "
 " Brief help
 " :BundleList          - list configured bundles
@@ -202,7 +202,7 @@ au FocusLost * :wa
 " Source: http://stackoverflow.com/a/2496570/286021
 set autoread
 
-" My own customizations from here on out that aren't from anywhere in particular. 
+" My own customizations from here on out that aren't from anywhere in particular.
 " Nelson
 
 " Tags
@@ -230,7 +230,7 @@ nnoremap <silent> <leader>c   :TagbarOpen<CR>
 
 set background=dark
 " Anti conflict with command t
-let g:EasyMotion_leader_key = '<Leader>m' 
+let g:EasyMotion_leader_key = '<Leader>m'
 
 " From http://amix.dk/vim/vimrc.html
 
