@@ -268,9 +268,7 @@ cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
 " Disable Vim Swapfile and just use git for everything
 set noswapfile
 
-"""
-""" File specific settings
-"""
+" File specific settings
 
 " Set ruby files to use different settings for spaces.
 autocmd FileType ruby setlocal sw=2 sts=2 et
