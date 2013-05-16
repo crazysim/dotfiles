@@ -14,12 +14,6 @@ Bundle 'gmarik/vundle'
 " Allows more repeating with plugins
 Bundle 'repeat.vim'
 
-" Not sure what this provides but it's here anyway
-Bundle 'tlib'
-
-" Not sure either.
-Bundle 'L9'
-
 " VCS SUPPORT:
 Bundle 'tpope/vim-fugitive'
 
@@ -42,14 +36,6 @@ Bundle 'Lokaltog/vim-easymotion'
 " DWM clone
 Bundle 'spolu/dwm.vim'
 
-" <C-W> o toggle to zoom windows
-" Bundle 'ZoomWin'
-
-" Lusty stuff for mojing around with <leader> l {jfrbg}
-" No longer used due to ctrl-p being an all in one
-" Bundle 'LustyExplorer'
-Bundle 'LustyJuggler'
-
 " Ctrl P
 " juggles with ctrl p
 Bundle 'kien/ctrlp.vim'
@@ -66,18 +52,6 @@ Bundle 'tComment'
 
 " Use :Extradite to get a nice log
 Bundle 'int3/vim-extradite'
-
-" I don't use this. It's to quicky run something.
-" Bundle 'thinca/vim-quickrun'
-
-" It's Command T, or leader j. Find a file quickly
-" Bundle 'wincent/Command-T'
-
-" I don't use this either. I use a real file browser
-" Bundle 'scrooloose/nerdtree'
-
-" Deprecated in favor of the new TagBar
-" Bundle 'taglist.vim'
 
 " Got snippets. Tab to complete
 Bundle 'SirVer/ultisnips'
