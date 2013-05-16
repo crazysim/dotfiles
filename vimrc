@@ -107,6 +107,9 @@ Bundle 'kchmck/vim-coffee-script'
 " Markdown
 Bundle 'tpope/vim-markdown'
 
+" Vim-Ruby
+Bundle 'vim-ruby/vim-ruby'
+
 filetype plugin indent on     " required !
 "
 " Brief help
