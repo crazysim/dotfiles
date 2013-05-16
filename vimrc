@@ -232,8 +232,9 @@ cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
 
 " File specific settings
 
-" Set ruby files to use different settings for spaces.
-autocmd FileType ruby setlocal sw=2 sts=2 et
+" Read Vagrantfile files as Ruby
+autocmd BufNewFile,BufRead Vagrantfile set ft=ruby
+autocmd BufNewFile,BufRead Berksfile set ft=ruby
 
 " Read MML files for Carto Tilemill with JSON aka Javascript
 autocmd BufNewFile,BufRead *.mml set ft=javascript
@@ -249,3 +250,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 "
 " Makefile no expandtab
 autocmd FileType make setlocal noexpandtab
+
+" Set ruby files to use different settings for spaces.
+autocmd FileType ruby setlocal sw=2 sts=2 et
