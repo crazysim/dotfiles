@@ -131,7 +131,7 @@ set expandtab     " Tab makes soft indents
 set encoding=utf-8
 set scrolloff=5
 set showcmd
-set showmode
+set showmode " Display the current mode
 set ruler
 set ttyfast
 set cursorline
