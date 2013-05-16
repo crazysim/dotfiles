@@ -45,4 +45,7 @@ if has("gui_macvim")
     imap <D-8> <Esc>8gt
     map  <D-9> 9gt
     imap <D-9> <Esc>9gt
+
+    " Automatically resize splits when resizing MacVim window
+    autocmd VimResized * wincmd =
 endif

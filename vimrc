@@ -212,14 +212,13 @@ set wildmenu
 set display=lastline
 
 if has("gui_running")
-  " Automatically resize splits when resizing MacVim window
-  autocmd VimResized * wincmd =
 endif
 
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
 
+" This needs to be in vimrc
 let macvim_hig_shift_movement = 1
 
 "Smart buffer delete
