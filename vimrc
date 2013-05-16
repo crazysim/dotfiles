@@ -121,15 +121,15 @@ filetype plugin indent on     " required !
 " Steve Losh (http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
 " Tabs
 "
-set tabstop=4
-set shiftwidth=2
-set softtabstop=2
-set expandtab
+set tabstop=4     " Indentation every four columns
+set shiftwidth=2  " Use indents of two spaces
+set softtabstop=2  " Backspace can delete soft indent
+set expandtab     " Tab makes soft indents
 
 " Sanity
 
 set encoding=utf-8
-set scrolloff=3
+set scrolloff=5
 set showcmd
 set showmode
 set ruler
