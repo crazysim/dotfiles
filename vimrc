@@ -126,6 +126,9 @@ set shiftwidth=2  " Use indents of two spaces
 set softtabstop=2  " Backspace can delete soft indent
 set expandtab     " Tab makes soft indents
 
+" Disable Vim Swapfile and just use git for everything
+set noswapfile
+
 " Sanity
 
 set encoding=utf-8
@@ -160,12 +163,15 @@ set colorcolumn=85
 set list
 set listchars=tab:▸\ ,eol:¬
 
-" Save on loss of focus
-au FocusLost * :wa
+" Always show a status line
+set laststatus=2
 
-" Load when something outside vim changes the file. More IntelliJ like.
+" IntelliJ IDEA style autosaving and reloading.
+" Load when something outside vim changes the file.
 " Source: http://stackoverflow.com/a/2496570/286021
 set autoread
+" Save on loss of focus
+au FocusLost * :wa
 
 " Tags
 " Won't need this because of
@@ -196,18 +202,6 @@ let g:EasyMotion_leader_key = '<Leader>m'
 
 " From http://amix.dk/vim/vimrc.html
 
-""""""""""""""""""""""""""""""
-" => Command-T
-""""""""""""""""""""""""""""""
-" let g:CommandTMaxHeight = 15
-" set wildignore+=*.o,*.obj,.git,*.pyc
-" noremap <leader>j :CommandTFlush<cr>:CommandT<cr>
-" noremap <leader>y :CommandTFlush<cr>
-
-" Always show a status line
-
-set laststatus=2
-
 " Have NERDCommenter use spaces when commenting like textmate
 let NERDSpaceDelims=1
 
@@ -228,19 +222,14 @@ set directory=~/.vim/backup
 
 let macvim_hig_shift_movement = 1
 
-
 "Smart buffer delete
 nnoremap <silent> <leader>bd :Sbd<CR>
-
 
 " Fancy Powerline Symbols
 let g:Powerline_symbols = 'fancy'
 
 " Force save as sudo
 cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
-
-" Disable Vim Swapfile and just use git for everything
-set noswapfile
 
 " File specific settings
 
