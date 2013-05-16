@@ -211,9 +211,6 @@ set wildmenu
 " Don't show @ signs when wrapping super line lines
 set display=lastline
 
-if has("gui_running")
-endif
-
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
