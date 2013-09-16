@@ -85,3 +85,6 @@ function pf_open () {
         open -a "Path Finder.app" $PWD
 }
 
+
+# added by travis gem
+source /Users/nelson/.travis/travis.sh
