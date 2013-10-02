@@ -88,3 +88,9 @@ function pf_open () {
 
 # added by travis gem
 source /Users/nelson/.travis/travis.sh
+
+
+function wubi_package { curl -F package=@$1 http://wubi.local:10001/package ; }
+function wubi_rawreceipt { curl -F rawreceipt=@$1 http://wubi.local:10001/rawreceipt ; }
+function xing_package { curl -F package=@$1 http://xing.local:10001/package ; }
+function xing_rawreceipt { curl -F rawreceipt=@$1 http://xing.local:10001/rawreceipt ; }
