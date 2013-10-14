@@ -30,9 +30,6 @@ Bundle 'tpope/vim-surround'
 " You can open a file to a line!
 Bundle 'file-line'
 
-" Easy motion for going to some place without guessing how many keys to press
-Bundle 'Lokaltog/vim-easymotion'
-
 " DWM clone
 Bundle 'spolu/dwm.vim'
 
@@ -42,9 +39,6 @@ Bundle 'kien/ctrlp.vim'
 
 " Smart Buffer Delete
 Bundle 'orftz/sbd.vim'
-
-" The nicer powerbar line thing
-Bundle 'Lokaltog/vim-powerline'
 
 " EDITING STUFF:
 " It comments a bit more crazy than NERDCommenter
@@ -200,8 +194,6 @@ nnoremap <silent> <leader>c   :TagbarOpen<CR>
 " nnoremap <silent> <leader>c :TagbarClose<CR>
 
 set background=dark
-" Anti conflict with command t
-let g:EasyMotion_leader_key = '<Leader>m'
 
 " From http://amix.dk/vim/vimrc.html
 
@@ -223,9 +215,6 @@ let macvim_hig_shift_movement = 1
 
 "Smart buffer delete
 nnoremap <silent> <leader>bd :Sbd<CR>
-
-" Fancy Powerline Symbols
-let g:Powerline_symbols = 'fancy'
 
 " Force save as sudo
 cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
