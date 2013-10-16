@@ -69,6 +69,17 @@ Bundle 'kana/vim-smartinput'
 " TagBar is the new TagList
 Bundle 'majutsushi/tagbar'
 
+" Tags are generated via git hooks
+" http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
+
+let g:tagbar_autofocus = 1
+let g:tagbar_sort = 0
+let g:tagbar_compact = 0
+let g:tagbar_expand = 0
+
+"Open/focus tagbar
+nnoremap <silent> <leader>c   :TagbarOpen<CR>
+
 " Ruby endings
 Bundle 'tpope/vim-endwise'
 
@@ -170,28 +181,9 @@ set autoread
 " Save on loss of focus
 au FocusLost * :wa
 
-" Tags
-" Won't need this because of
-" http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
-" saying I won't need this because of fugitive.vim
-" set tags=./tags;$HOME          " walk directory tree upto $HOME looking for tags
-
-" TagBar Settings
-
-let g:tagbar_autofocus = 1
-let g:tagbar_sort = 0
-let g:tagbar_compact = 0
-let g:tagbar_expand = 0
-
 " Ctrl-P settings
 let g:ctrlp_extentions=['tag']
 nnoremap <silent> <c-p> :CtrlPTag
-
-"Open/focus tagbar
-nnoremap <silent> <leader>c   :TagbarOpen<CR>
-"Close it
-"(also possible by pressing "q" while tagbar is focused)
-" nnoremap <silent> <leader>c :TagbarClose<CR>
 
 set background=dark
 
