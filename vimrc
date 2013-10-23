@@ -120,6 +120,7 @@ Bundle 'vim-ruby/vim-ruby'
 
 " Golang
 Bundle 'jnwhiteh/vim-golang'
+autocmd FileType go setlocal shiftwidth=1 tabstop=3 noexpandtab
 
 filetype plugin indent on     " required !
 "
