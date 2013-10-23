@@ -118,6 +118,9 @@ Bundle 'tpope/vim-markdown'
 " Vim-Ruby
 Bundle 'vim-ruby/vim-ruby'
 
+" Golang
+Bundle 'jnwhiteh/vim-golang'
+
 filetype plugin indent on     " required !
 "
 " Brief help
