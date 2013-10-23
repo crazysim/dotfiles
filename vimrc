@@ -36,9 +36,12 @@ Bundle 'spolu/dwm.vim'
 " Ctrl P
 " juggles with ctrl p
 Bundle 'kien/ctrlp.vim'
+let g:ctrlp_extentions=['tag']
+nnoremap <silent> <c-p> :CtrlPTag
 
 " Smart Buffer Delete
 Bundle 'orftz/sbd.vim'
+nnoremap <silent> <leader>bd :Sbd<CR>
 
 " EDITING STUFF:
 " It comments a bit more crazy than NERDCommenter
@@ -181,10 +184,6 @@ set autoread
 " Save on loss of focus
 au FocusLost * :wa
 
-" Ctrl-P settings
-let g:ctrlp_extentions=['tag']
-nnoremap <silent> <c-p> :CtrlPTag
-
 set background=dark
 
 " From http://amix.dk/vim/vimrc.html
@@ -204,9 +203,6 @@ set directory=~/.vim/backup
 
 " This needs to be in vimrc
 let macvim_hig_shift_movement = 1
-
-"Smart buffer delete
-nnoremap <silent> <leader>bd :Sbd<CR>
 
 " Force save as sudo
 cmap w!! w !sudo tee % > /dev/null     "force save when opened while !root
