@@ -155,6 +155,7 @@ set showmode " Display the current mode
 set ruler
 set ttyfast
 set cursorline
+set number
 set relativenumber
 set smartindent
 
