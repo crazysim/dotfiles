@@ -73,8 +73,10 @@ Bundle 'Rename'
 Bundle 'bronson/vim-trailing-whitespace'
 
 " Does autoclosing of brackets and parenthesis
-" Bundle 'Raimondi/delimitMate'
-Bundle 'kana/vim-smartinput'
+Bundle 'Raimondi/delimitMate'
+let delimitMate_expand_cr = 1
+
+" Bundle 'kana/vim-smartinput'
 
 " TagBar is the new TagList
 Bundle 'majutsushi/tagbar'
