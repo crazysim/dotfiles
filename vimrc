@@ -8,6 +8,13 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
+" My Global Settings
+
+set tabstop=4     " Indentation every four columns
+set shiftwidth=2  " Use indents of two spaces
+set softtabstop=2  " Backspace can delete soft indent
+set expandtab     " Tab makes soft indents
+
 " My Bundles and real vimrc starting here:
 
 " "LIBRARIESISH:
@@ -120,7 +127,7 @@ Bundle 'vim-ruby/vim-ruby'
 
 " Golang
 Bundle 'jnwhiteh/vim-golang'
-autocmd FileType go setlocal shiftwidth=1 tabstop=3 noexpandtab
+autocmd FileType go setlocal shiftwidth=1 tabstop=4 noexpandtab
 
 filetype plugin indent on     " required !
 "
@@ -135,11 +142,6 @@ filetype plugin indent on     " required !
 
 " Steve Losh (http://stevelosh.com/blog/2010/09/coming-home-to-vim/)
 " Tabs
-"
-set tabstop=4     " Indentation every four columns
-set shiftwidth=2  " Use indents of two spaces
-set softtabstop=2  " Backspace can delete soft indent
-set expandtab     " Tab makes soft indents
 
 " Disable Vim Swapfile and just use git for everything
 set noswapfile
