@@ -50,6 +50,17 @@ nnoremap <silent> <c-p> :CtrlPTag
 Bundle 'orftz/sbd.vim'
 nnoremap <silent> <leader>bd :Sbd<CR>
 
+" Vim Airline
+Bundle 'bling/vim-airline'
+let g:airline_powerline_fonts=1
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_branch_prefix = '⭠ '
+let g:airline_readonly_symbol = '⭤'
+let g:airline_linecolumn_prefix = '⭡'
+
 " EDITING STUFF:
 " It comments a bit more crazy than NERDCommenter
 Bundle 'tComment'
@@ -106,7 +117,11 @@ Bundle 'Rip-Rip/clang_complete'
 Bundle 'tpope/vim-rails'
 
 " SYNTAX:
-" Handy for Android takeapart
+" Checker
+"
+Bundle 'scrooloose/syntastic'
+
+""" Handy for Android takeapart
 Bundle 'alderz/smali-vim'
 
 " Android Logcat syntax
