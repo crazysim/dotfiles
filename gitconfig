@@ -5,7 +5,7 @@
 	excludesfile = /Users/nelson/.gitignore
 editor = vim -f
 [github]
-user = crazysim
+user = nelsonjchen
 password =  !security 2>&1 >/dev/null find-generic-password -gs github.password | ruby -e 'print $1 if STDIN.gets =~ /^password: \\\"(.*)\\\"$/'
 
 [alias]
@@ -27,7 +27,7 @@ done = !git fetch && git rebase origin/master && git checkout master && git merg
 	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 [push]
-	default = matching
+	default = simple
 [credential]
 	helper = osxkeychain
 [color]
