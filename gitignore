@@ -44,3 +44,6 @@ tags
 out/
 
 .kitchen/
+
+# Heroku Foreman
+.env

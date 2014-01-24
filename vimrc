@@ -117,12 +117,18 @@ Bundle 'tpope/vim-endwise'
 " Tabularize because i use spaces
 Bundle 'godlygeek/tabular'
 
+" Easy Align
+Bundle 'junegunn/vim-easy-align'
+
 " FRAMEWORKS:
 " Clang for C and C++
 Bundle 'Rip-Rip/clang_complete'
 
 " Ruby on Rails
 Bundle 'tpope/vim-rails'
+
+" Vader is a testing framework
+Bundle 'junegunn/vader.vim'
 
 " SYNTAX:
 " Checker
@@ -152,6 +158,11 @@ Bundle 'vim-ruby/vim-ruby'
 
 " Golang
 Bundle 'jnwhiteh/vim-golang'
+
+" Extra for YACC and Bison
+Bundle 'justinmk/vim-syntax-extra'
+autocmd BufRead,BufNewFile *.jison setlocal ft=yacc
+
 autocmd FileType go setlocal shiftwidth=4 softtabstop=4 tabstop=4 noexpandtab
 
 filetype plugin indent on     " required !
