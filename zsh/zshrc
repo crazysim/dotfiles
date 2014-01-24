@@ -96,3 +96,5 @@ function xing_package { curl -F package=@$1 http://xing.local:10001/package ; }
 function xing_rawreceipt { curl -F rawreceipt=@$1 http://xing.local:10001/rawreceipt ; }
 
 source /Users/nelson/.venvburrito/startup.sh
+
+function unmerged_git { for k in $(git branch -a --merged|grep -v "\->"|sed "s/^..//");do echo -e $(git log -1 --pretty=format:"%Cgreen%ci %Cred%cr%Creset" "$k")\\t"$k";done|sort|less ; }
