@@ -37,9 +37,6 @@ Bundle 'tpope/vim-surround'
 " You can open a file to a line!
 Bundle 'file-line'
 
-" DWM clone
-Bundle 'spolu/dwm.vim'
-
 " Ctrl P
 " juggles with ctrl p
 Bundle 'kien/ctrlp.vim'
@@ -51,7 +48,6 @@ let g:ctrlp_user_command = {
       \ },
       \ 'fallback': 'find %s -type f'
       \ }
-
 nnoremap <silent> <c-p> :CtrlPTag
 
 " Smart Buffer Delete
@@ -70,20 +66,11 @@ let g:airline_readonly_symbol = '⭤'
 let g:airline_linecolumn_prefix = '⭡'
 
 " EDITING STUFF:
-" It comments a bit more crazy than NERDCommenter
-Bundle 'tComment'
-
-" Use :Extradite to get a nice log
-Bundle 'int3/vim-extradite'
-
 " Got snippets. Tab to complete
 Bundle 'SirVer/ultisnips'
 
 " It comments by cmd /
 Bundle 'scrooloose/nerdcommenter'
-
-" Allows me to clean up crummy mispellings
-Bundle 'tpope/vim-abolish'
 
 " I can rename a file with :Rename in place!
 Bundle 'Rename'
@@ -95,19 +82,14 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'Raimondi/delimitMate'
 let delimitMate_expand_cr = 1
 
-" Bundle 'kana/vim-smartinput'
-
 " TagBar is the new TagList
 Bundle 'majutsushi/tagbar'
-
 " Tags are generated via git hooks
 " http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html
-
 let g:tagbar_autofocus = 1
 let g:tagbar_sort = 0
 let g:tagbar_compact = 0
 let g:tagbar_expand = 0
-
 "Open/focus tagbar
 nnoremap <silent> <leader>c   :TagbarOpen<CR>
 
@@ -121,34 +103,13 @@ Bundle 'godlygeek/tabular'
 Bundle 'junegunn/vim-easy-align'
 
 " FRAMEWORKS:
-" Clang for C and C++
-Bundle 'Rip-Rip/clang_complete'
-
-" Ruby on Rails
-Bundle 'tpope/vim-rails'
-
-" Vader is a testing framework
-Bundle 'junegunn/vader.vim'
 
 " SYNTAX:
 " Checker
-"
 Bundle 'scrooloose/syntastic'
 
 """ Handy for Android takeapart
 Bundle 'alderz/smali-vim'
-
-" Android Logcat syntax
-Bundle 'thinca/vim-logcat'
-
-" Carto for Tilemill stuff
-Bundle 'crazysim/vim-carto'
-
-" This one for Scala Stuff
-Bundle 'bmatheny/vim-scala'
-
-" This one for Coffeescript
-Bundle 'kchmck/vim-coffee-script'
 
 " Markdown
 Bundle 'tpope/vim-markdown'
@@ -158,12 +119,12 @@ Bundle 'vim-ruby/vim-ruby'
 
 " Golang
 Bundle 'jnwhiteh/vim-golang'
+autocmd FileType go setlocal shiftwidth=4 softtabstop=4 tabstop=4 noexpandtab
 
-" Extra for YACC and Bison
+" Extra for YACC, Bison, and Jison
 Bundle 'justinmk/vim-syntax-extra'
 autocmd BufRead,BufNewFile *.jison setlocal ft=yacc
 
-autocmd FileType go setlocal shiftwidth=4 softtabstop=4 tabstop=4 noexpandtab
 
 filetype plugin indent on     " required !
 "
@@ -258,13 +219,7 @@ autocmd BufNewFile,BufRead Berksfile set ft=ruby
 
 " Read MML files for Carto Tilemill with JSON aka Javascript
 autocmd BufNewFile,BufRead *.mml set ft=javascript
-
-" Read Salt Stack SLS files as YAML
-autocmd BufNewFile,BufRead *.sls set ft=yaml sw=2 sts=2 et
 "
-" YACC for ypp
-au BufNewFile,BufReadPost *.ypp set ft=yacc
-
 " Markdown
 au BufRead,BufNewFile *.md set filetype=markdown
 "
