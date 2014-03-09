@@ -46,6 +46,9 @@ source `which virtualenvwrapper.sh`
 
 # Personal Binaries
 export PATH=$HOME/bin:$PATH
+#
+# Golang Binaries
+export PATH=$HOME/code/golang/bin:$PATH
 
 export PATH=/usr/local/share/python:$PATH
 
