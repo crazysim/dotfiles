@@ -50,10 +50,6 @@ let g:ctrlp_user_command = {
       \ }
 nnoremap <silent> <c-p> :CtrlPTag
 
-" Smart Buffer Delete
-Bundle 'orftz/sbd.vim'
-nnoremap <silent> <leader>bd :Sbd<CR>
-
 " Vim Airline
 Bundle 'bling/vim-airline'
 let g:airline_powerline_fonts=1
@@ -118,7 +114,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'vim-ruby/vim-ruby'
 
 " Golang
-Bundle 'jnwhiteh/vim-golang'
+Bundle 'Blackrush/vim-gocode'
 autocmd FileType go setlocal shiftwidth=4 softtabstop=4 tabstop=4 noexpandtab
 
 " Extra for YACC, Bison, and Jison
