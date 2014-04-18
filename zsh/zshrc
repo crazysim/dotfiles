@@ -68,10 +68,6 @@ export PGDATA="/usr/local/var/postgres"
 # NPM utilities
 export PATH="/usr/local/share/npm/bin:$PATH"
 
-# CUDA crap
-export PATH="/Developer/NVIDIA/CUDA-5.0/bin:$PATH"
-# export DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
-
 # AutoJump
 [[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
