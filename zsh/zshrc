@@ -40,19 +40,15 @@ export PATH=/usr/local/sbin:$PATH
 # Homebrew Python
 export PATH=/usr/local/share/python:$PATH
 
-# Virtualenv
-VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-source `which virtualenvwrapper.sh`
 
 # Personal Binaries
 export PATH=$HOME/bin:$PATH
-#
+
 # Golang Binaries
 export PATH=$HOME/code/golang/bin:$PATH
 
 export PATH=/usr/local/share/python:$PATH
 
-# 
 export EDITOR="vim"
 
 # Disable ZSH update prompt and be more Chrome-like and just update, damn it.
@@ -111,3 +107,6 @@ function serial38400 {
   cat $1 >&3
   exec 3>&-
 }
+
+# Pyenv setup
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
