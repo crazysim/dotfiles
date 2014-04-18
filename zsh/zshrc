@@ -24,7 +24,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gem ruby git brew osx github autojump ant vi-mode bundler pip history-substring-search heroku vagrant virtuanenv vundle virtualenvwrapper rsync pow golang)
+plugins=(gem ruby git brew osx github autojump ant vi-mode bundler pip history-substring-search heroku vagrant virtuanenv vundle rsync pow golang)
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
@@ -96,8 +96,6 @@ function wubi_package { curl -F package=@$1 http://wubi.local:10001/package ; }
 function wubi_rawreceipt { curl -F rawreceipt=@$1 http://wubi.local:10001/rawreceipt ; }
 function xing_package { curl -F package=@$1 http://xing.local:10001/package ; }
 function xing_rawreceipt { curl -F rawreceipt=@$1 http://xing.local:10001/rawreceipt ; }
-
-source /Users/nelson/.venvburrito/startup.sh
 
 function unmerged_git { for k in $(git branch -a --merged|grep -v "\->"|sed "s/^..//");do echo -e $(git log -1 --pretty=format:"%Cgreen%ci %Cred%cr%Creset" "$k")\\t"$k";done|sort|less ; }
 
