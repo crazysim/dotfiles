@@ -30,8 +30,12 @@ Session.vim
 TAGS
 tags
 
+# rbenv
 .rbenv-version
 .ruby-version
+
+# pyenv
+.python-version
 
 # Ruby plugin IntelliJ
 .generators
@@ -47,3 +51,4 @@ out/
 
 # Heroku Foreman
 .env
+
