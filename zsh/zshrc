@@ -24,7 +24,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gem ruby git brew osx github z ant vi-mode bundler pip history-substring-search heroku vagrant virtuanenv vundle rsync pow golang pyenv)
+plugins=(gem ruby git brew osx github z ant vi-mode bundler pip history-substring-search heroku vagrant virtuanenv vundle rsync pow golang pyenv rbenv)
 
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
@@ -43,16 +43,12 @@ export PATH=$HOME/bin:$PATH
 # Golang Binaries
 export PATH=$HOME/code/golang/bin:$PATH
 
-export PATH=/usr/local/share/python:$PATH
-
 export EDITOR="vim"
 
 # Disable ZSH update prompt and be more Chrome-like and just update, damn it.
 export DISABLE_UPDATE_PROMPT="true"
 
 alias shmagnum="mosh magnum -p 60000"
-
-eval "$(rbenv init -)"
 
 [[ -s $HOME/.pythonz/etc/bashrc ]] && source $HOME/.pythonz/etc/bashrc
 
@@ -92,6 +88,3 @@ function serial38400 {
   cat $1 >&3
   exec 3>&-
 }
-
-# Pyenv setup
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
