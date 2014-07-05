@@ -16,6 +16,9 @@ export ZSH_THEME="crazysim"
 # Comment this out to disable weekly auto-update checks
 export DISABLE_AUTO_UPDATE="true"
 
+# Disable ZSH update prompt and be more Chrome-like and just update, damn it.
+export DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment following line if you want to disable colors in ls
 # export DISABLE_LS_COLORS="true"
 
@@ -24,10 +27,7 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gem ruby git brew osx github z ant vi-mode bundler pip history-substring-search heroku vagrant virtuanenv vundle rsync pow golang pyenv rbenv gradle)
-
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+plugins=(gem ruby git brew osx github z ant history-substring-search bundler pip heroku vagrant vundle rsync pow golang pyenv rbenv)
 
 # Making sure these are in there
 # System Stuff
@@ -45,25 +45,13 @@ export PATH=$HOME/code/golang/bin:$PATH
 
 export EDITOR="vim"
 
-# Disable ZSH update prompt and be more Chrome-like and just update, damn it.
-export DISABLE_UPDATE_PROMPT="true"
-
-alias shmagnum="mosh magnum -p 60000"
-
 [[ -s $HOME/.pythonz/etc/bashrc ]] && source $HOME/.pythonz/etc/bashrc
 
 # API Keys
 source $HOME/.api_keys
 
-export PGDATA="/usr/local/var/postgres"
-
 # NPM utilities
 export PATH="/usr/local/share/npm/bin:$PATH"
-
-# AutoJump
-[[ -f `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-# alias pview="python ~/code/sr/ric/remote_capture/pickle_to_cap.py"
 
 export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
 
