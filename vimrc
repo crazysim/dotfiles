@@ -5,7 +5,6 @@ if !1 | finish | endif
 
 if has('vim_starting')
   set nocompatible               " Be iMproved
-  filetype off
 
   " Required:
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -142,11 +141,15 @@ autocmd FileType make setlocal noexpandtab
 " Read MML files for Carto Tilemill with JSON aka Javascript
 autocmd BufNewFile,BufRead *.mml set ft=javascript
 
+" Rust
+NeoBundle 'wting/rust.vim'
+
+" Toml
+NeoBundle 'cespare/vim-toml'
+
 
 " NEOBUNDLE CONTINUED:
 """ Continue NeoBundle Setup
-
-filetype on
 
 " Required:
 call neobundle#end()
