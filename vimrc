@@ -21,9 +21,6 @@ set expandtab     " Tab makes soft indents
 " Allows more repeating with plugins
 Bundle 'repeat.vim'
 
-" VCS SUPPORT:
-Bundle 'tpope/vim-fugitive'
-
 " VISUAL STUFF:
 " I like this theme
 Bundle 'altercation/vim-colors-solarized'
