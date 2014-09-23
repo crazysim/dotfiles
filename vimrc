@@ -5,6 +5,7 @@ if !1 | finish | endif
 
 if has('vim_starting')
   set nocompatible               " Be iMproved
+  filetype off
 
   " Required:
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -144,6 +145,8 @@ autocmd BufNewFile,BufRead *.mml set ft=javascript
 
 " NEOBUNDLE CONTINUED:
 """ Continue NeoBundle Setup
+
+filetype on
 
 " Required:
 call neobundle#end()
