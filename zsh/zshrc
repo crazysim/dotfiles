@@ -27,7 +27,7 @@ export DISABLE_UPDATE_PROMPT="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(gem ruby git brew osx github z ant history-substring-search bundler pip heroku vagrant vundle rsync pow golang pyenv rbenv)
+plugins=(z gem ruby git brew osx github z ant history-substring-search bundler heroku vagrant vundle rsync pow golang pyenv rbenv)
 
 # Making sure these are in there
 # System Stuff
@@ -80,3 +80,10 @@ function serial38400 {
 alias j=z
 
 export VAGRANT_DEFAULT_PROVIDER=virtualbox
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+###
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"

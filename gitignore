@@ -52,3 +52,5 @@ out/
 # Heroku Foreman
 .env
 
+# IntelliJ JIRA
+atlassian-ide-plugin.xml
