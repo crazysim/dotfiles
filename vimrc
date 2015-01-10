@@ -147,6 +147,10 @@ NeoBundle 'wting/rust.vim'
 " Toml
 NeoBundle 'cespare/vim-toml'
 
+" Fish Shell
+NeoBundle 'kballard/vim-fish'
+autocmd FileType fish setlocal noexpandtab softtabstop=4 shiftwidth=4
+
 
 " NEOBUNDLE CONTINUED:
 """ Continue NeoBundle Setup
