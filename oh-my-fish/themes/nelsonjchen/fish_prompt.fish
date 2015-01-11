@@ -11,7 +11,7 @@ function __return_code
 end
 
 function fish_prompt
-	echo (set_color -o cyan)(whoami)(set_color normal)(set_color yellow)@(set_color -o blue)(hostname| cut -d . -f 1)(set_color normal):(set_color -o green)(__zsh_percent_tilde)(set_color normal)
+	echo (set_color -o cyan)(whoami)(set_color normal)(set_color yellow)@(set_color -o blue)(hostname| cut -d . -f 1)(set_color normal):(set_color -o green)(__zsh_percent_tilde)(set_color normal)(__omz_git_prompt_info)
 	echo -n (set_color (__caret_color))(__zsh_percent_hash)' '(set_color normal)
 end
 
@@ -48,6 +48,6 @@ end
 
 function __omz_git_prompt_info
 	# The Oh-my-zsh prompt is very complicated. Best to have just enough.
-	echo -n "unimplemented"
+	__fish_git_prompt
 end
 
