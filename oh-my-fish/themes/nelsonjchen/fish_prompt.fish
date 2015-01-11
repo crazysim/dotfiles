@@ -11,8 +11,12 @@ function __return_code
 end
 
 function fish_prompt
-	echo (set_color -o cyan)(whoami)(set_color normal)(set_color yellow)@(set_color -o blue)(hostname| cut -d . -f 1)(set_color normal):(set_color -o green)(__zsh_percent_tilde)(set_color normal)(__omz_git_prompt_info)
-	echo -n (set_color (__caret_color))(__zsh_percent_hash)' '(set_color normal)
+	set user (set_color -o cyan)(whoami)(set_color normal)
+	set machine (set_color yellow)@(set_color -o blue)(hostname| cut -d . -f 1)(set_color normal)
+	set directory (set_color -o green)(__zsh_percent_tilde)(set_color normal)
+	set git (__omz_git_prompt_info)
+	echo -s $user $machine ':' $directory $git
+	echo (set_color (__caret_color))(__zsh_percent_hash)' '(set_color normal)
 end
 
 function fish_right_prompt -d "Write out the right prompt"
@@ -48,6 +52,8 @@ end
 
 function __omz_git_prompt_info
 	# The Oh-my-zsh prompt is very complicated. Best to have just enough.
-	__fish_git_prompt
+	set -l __fish_git_prompt_showdirtystate 'yes'
+	set -l __fish_git_prompt_char_dirtystate '±'
+	printf '%s' (__fish_git_prompt)
 end
 
