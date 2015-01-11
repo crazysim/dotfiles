@@ -38,5 +38,5 @@ function fish_right_prompt -d "Write out the right prompt"
 		set_color normal
 	end
 
-	echo -ns (date "+%D")" - "(date "+%T")
+	echo -ns (date "+%D")" - "(date "+%l:%M %p")
 end
