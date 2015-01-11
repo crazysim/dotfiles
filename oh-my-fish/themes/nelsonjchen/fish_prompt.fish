@@ -26,6 +26,11 @@ end
 
 # It's like prompt_pwd, but not exactly.
 function __zsh_percent_tilde
+	# This still needs work to mimic the $HOME condensation and other variables.
+	#
+	# However, this might be going against fish ideals. I'll just do $HOME.
+	#
+	# TODO
   pwd
 end
 
@@ -42,6 +47,7 @@ end
 # https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/git.zsh
 
 function __omz_git_prompt_info
-  echo -n "unimplemented"
+	# The Oh-my-zsh prompt is very complicated. Best to have just enough.
+	echo -n "unimplemented"
 end
 
