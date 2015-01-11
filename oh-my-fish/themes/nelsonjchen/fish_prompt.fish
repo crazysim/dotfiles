@@ -14,8 +14,12 @@ function fish_prompt
 	set user (set_color -o cyan)(whoami)(set_color normal)
 	set machine (set_color -o blue)(hostname| cut -d . -f 1)(set_color normal)
 	set directory (set_color -o green)(__zsh_percent_tilde)(set_color normal)
-	set git (__omz_git_prompt_info)
+	set -g __fish_git_prompt_show_informative_status 'yes'
+	set -g __fish_git_prompt_showcolorhints 'yes'
+	set git (__fish_git_prompt)
+
 	echo -s $user (set_color yellow)'@' $machine ':' $directory $git
+
 	echo (set_color (__caret_color))(__zsh_percent_hash)' '(set_color normal)
 end
 
@@ -45,15 +49,5 @@ function __zsh_percent_hash
 	else
 	  echo -n "\$"
 	end
-end
-
-## Oh-my-zsh polyfills
-# https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/git.zsh
-
-function __omz_git_prompt_info
-	# The Oh-my-zsh prompt is very complicated. Best to have just enough.
-	set -l __fish_git_prompt_showdirtystate 'yes'
-	set -l __fish_git_prompt_char_dirtystate '±'
-	printf '%s' (__fish_git_prompt)
 end
 
