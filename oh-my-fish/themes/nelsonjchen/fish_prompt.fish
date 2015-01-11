@@ -12,10 +12,10 @@ end
 
 function fish_prompt
 	set user (set_color -o cyan)(whoami)(set_color normal)
-	set machine (set_color yellow)@(set_color -o blue)(hostname| cut -d . -f 1)(set_color normal)
+	set machine (set_color -o blue)(hostname| cut -d . -f 1)(set_color normal)
 	set directory (set_color -o green)(__zsh_percent_tilde)(set_color normal)
 	set git (__omz_git_prompt_info)
-	echo -s $user $machine ':' $directory $git
+	echo -s $user (set_color yellow)'@' $machine ':' $directory $git
 	echo (set_color (__caret_color))(__zsh_percent_hash)' '(set_color normal)
 end
 
