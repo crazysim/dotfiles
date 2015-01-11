@@ -8,6 +8,14 @@ function fish_prompt
 
 	set -g __fish_git_prompt_show_informative_status 'yes'
 	set -g __fish_git_prompt_showcolorhints 'yes'
+	set color_bold_red (set_color --bold red)
+	set color_bold_yellow (set_color --bold yellow)
+	set color_bold_cyan (set_color --bold cyan)
+	set color_reset (set_color normal)
+	set -g __fish_git_prompt_char_dirtystate "$color_bold_red±$color_reset"
+	set -g __fish_git_prompt_char_cleanstate "$color_bold_red♥$color_reset"
+	set -g __fish_git_prompt_char_stagedstate "$color_bold_yellow●$color_reset"
+	set -g __fish_git_prompt_char_stagedstate "$color_bold_cyan…$color_reset"
 	set git (__fish_git_prompt)
 
 	echo -s $user (set_color yellow)'@' $machine ':' $directory $git
