@@ -14,3 +14,5 @@ set fish_custom $HOME/dotfiles/oh-my-fish
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
+
+alias j=z
