@@ -16,7 +16,11 @@ function fish_prompt
 	set -g __fish_git_prompt_char_cleanstate "$color_bold_red♥$color_reset"
 	set -g __fish_git_prompt_char_stagedstate "$color_bold_yellow●$color_reset"
 	set -g __fish_git_prompt_char_stagedstate "$color_bold_cyan…$color_reset"
-	set git (__fish_git_prompt)
+	set -g __fish_git_prompt_char_stateseparator ' '
+	# I have *no* idea why this works. Maybe set_color just ignores the second bold?
+	set -g __fish_git_prompt_color_branch "--bold" "--bold" "yellow"
+	set color_bold_magenta (set_color --bold magenta)
+	set git (__fish_git_prompt "$color_bold_magenta^$color_reset%s")
 
 	echo -s $user (set_color yellow)'@' $machine ':' $directory $git
 
