@@ -4,6 +4,7 @@ if has("gui_macvim")
     " Fullscreen takes up entire screen
     set fuoptions=maxhorz,maxvert
 
+    set guifont=Menlo\ for\ Powerline:h11
     " Command-/ to toggle comments
     map <D-/> <plug>NERDCommenterToggle<CR>
     imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
