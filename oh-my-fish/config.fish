@@ -9,6 +9,7 @@ set fish_theme nelsonjchen
 # Example format: set fish_plugins autojump bundler
 set fish_plugins z
 
+
 # Path to your custom folder (default path is $FISH/custom)
 set fish_custom $HOME/dotfiles/oh-my-fish
 
@@ -16,3 +17,5 @@ set fish_custom $HOME/dotfiles/oh-my-fish
 . $fish_path/oh-my-fish.fish
 
 alias j=z
+
+rbenv init - | source
