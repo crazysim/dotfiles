@@ -94,7 +94,7 @@ nnoremap <silent> <leader>c   :TagbarOpen<CR>
 NeoBundle 'junegunn/vim-easy-align'
 
 " Checker
-NeoBundle 'scrooloose/syntastic'
+" NeoBundle 'scrooloose/syntastic'
 
 
 " FRAMEWORKS:
