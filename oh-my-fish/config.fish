@@ -19,3 +19,4 @@ set fish_custom $HOME/dotfiles/oh-my-fish
 alias j=z
 
 rbenv init - | source
+pyenv init - | source
