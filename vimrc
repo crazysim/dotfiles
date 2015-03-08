@@ -33,6 +33,10 @@ NeoBundle 'repeat.vim'
 " I like this theme because it's easy on the eyes.
 NeoBundle 'altercation/vim-colors-solarized'
 
+" If Neovim is going with this for the defaults, I might as well start getting
+" used to it now.
+NeoBundle 'freeo/vim-kalisi'
+
 " Indent guides!
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
@@ -216,7 +220,11 @@ set autoread
 " Save on loss of focus
 au FocusLost * :wa
 
+colorscheme kalisi
+let g:airline_theme='kalisi'
+set t_Co=256
 set background=dark
+
 syntax on
 
 " Use wildmenu
