@@ -28,6 +28,10 @@ NeoBundle 'Shougo/vimproc.vim'
 " Allows more repeating with plugins
 NeoBundle 'repeat.vim'
 
+" COMPATIBILITY:
+" Tmux and iTerm 2 shim for FocusLost and FocusGained "GUI" vim events
+" Also, pretty cursor changing.
+NeoBundle 'sjl/vitality.vim'
 
 " VISUAL STUFF:
 " I like this theme because it's easy on the eyes.
