@@ -86,6 +86,7 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 " Does autoclosing of brackets and parenthesis
 NeoBundle 'Raimondi/delimitMate'
 let delimitMate_expand_cr = 1
+set backspace=2
 
 " TagBar is the new TagList
 NeoBundle 'majutsushi/tagbar'
