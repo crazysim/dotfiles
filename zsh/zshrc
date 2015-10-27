@@ -87,3 +87,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ###
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
+
+# PERL
+if which plenv > /dev/null; then eval "$(plenv init -)"; fi
