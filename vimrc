@@ -28,10 +28,18 @@ NeoBundle 'Shougo/vimproc.vim'
 " Allows more repeating with plugins
 NeoBundle 'repeat.vim'
 
+" COMPATIBILITY:
+" Tmux and iTerm 2 shim for FocusLost and FocusGained "GUI" vim events
+" Also, pretty cursor changing.
+NeoBundle 'sjl/vitality.vim'
 
 " VISUAL STUFF:
 " I like this theme because it's easy on the eyes.
 NeoBundle 'altercation/vim-colors-solarized'
+
+" If Neovim is going with this for the defaults, I might as well start getting
+" used to it now.
+NeoBundle 'freeo/vim-kalisi'
 
 " Indent guides!
 NeoBundle 'nathanaelkane/vim-indent-guides'
@@ -78,6 +86,7 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 " Does autoclosing of brackets and parenthesis
 NeoBundle 'Raimondi/delimitMate'
 let delimitMate_expand_cr = 1
+set backspace=2
 
 " TagBar is the new TagList
 NeoBundle 'majutsushi/tagbar'
@@ -136,6 +145,16 @@ autocmd BufNewFile,BufRead *.mml set ft=javascript
 
 " Rust
 NeoBundle 'wting/rust.vim'
+NeoBundle 'phildawes/racer', {
+\   'build' : {
+\     'mac': 'cargo build --release',
+\     'unix': 'cargo build --release',
+\   }
+\ }
+set hidden
+let g:racer_cmd = $HOME."/.vim/bundle/racer/target/release/racer"
+let $RUST_SRC_PATH = $HOME."/code/rust/src/"
+
 
 " Toml
 NeoBundle 'cespare/vim-toml'
@@ -216,7 +235,11 @@ set autoread
 " Save on loss of focus
 au FocusLost * :wa
 
+colorscheme kalisi
+let g:airline_theme='kalisi'
+set t_Co=256
 set background=dark
+
 syntax on
 
 " Use wildmenu
