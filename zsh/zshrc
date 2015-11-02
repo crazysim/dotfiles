@@ -90,3 +90,5 @@ export PATH="$PATH:$GOPATH/bin"
 
 # PERL
 if which plenv > /dev/null; then eval "$(plenv init -)"; fi
+
+[ -s "/Users/nelson/.dnx/dnvm/dnvm.sh" ] && . "/Users/nelson/.dnx/dnvm/dnvm.sh" # Load dnvm
