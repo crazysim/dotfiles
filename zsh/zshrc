@@ -27,7 +27,7 @@ export DISABLE_UPDATE_PROMPT="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(z gem ruby git brew osx github z ant history-substring-search bundler heroku vagrant vundle rsync pow golang pyenv rbenv)
+plugins=(z gem ruby git brew osx z ant history-substring-search bundler heroku vagrant vundle rsync pow golang pyenv rbenv)
 
 # Making sure these are in there
 # System Stuff
@@ -42,6 +42,9 @@ export PATH=$HOME/bin:$PATH
 
 # Golang Binaries
 export PATH=$HOME/code/golang/bin:$PATH
+#
+# Rust stable binaries
+export PATH=$HOME/.multirust/toolchains/stable/cargo/bin:$PATH
 
 export EDITOR="vim"
 
@@ -58,17 +61,6 @@ export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
 export SBT_OPTS='-noverify -javaagent:/Users/nelson/bin/jrebel.jar -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:PermSize=256M -XX:MaxPermSize=512M'
 
 source $ZSH/oh-my-zsh.sh
-
-function pf_open () {
-        open -a "Path Finder.app" $PWD
-}
-
-function wubi_package { curl -F package=@$1 http://wubi.local:10001/package ; }
-function wubi_rawreceipt { curl -F rawreceipt=@$1 http://wubi.local:10001/rawreceipt ; }
-function xing_package { curl -F package=@$1 http://xing.local:10001/package ; }
-function xing_rawreceipt { curl -F rawreceipt=@$1 http://xing.local:10001/rawreceipt ; }
-
-function unmerged_git { for k in $(git branch -a --merged|grep -v "\->"|sed "s/^..//");do echo -e $(git log -1 --pretty=format:"%Cgreen%ci %Cred%cr%Creset" "$k")\\t"$k";done|sort|less ; }
 
 function serial38400 {
   exec 3<> /dev/cu.usbserial
@@ -88,7 +80,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
-# PERL
-if which plenv > /dev/null; then eval "$(plenv init -)"; fi
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/nelson/google-cloud-sdk/path.zsh.inc'
 
-[ -s "/Users/nelson/.dnx/dnvm/dnvm.sh" ] && . "/Users/nelson/.dnx/dnvm/dnvm.sh" # Load dnvm
+# The next line enables shell command completion for gcloud.
+source '/Users/nelson/google-cloud-sdk/completion.zsh.inc'
