@@ -1,3 +1,8 @@
+" Nelson's neovim configuration
+
+set relativenumber
+set number
+
 "dein Scripts-----------------------------
 " Required:
 set runtimepath^=$HOME/.dein/repos/github.com/Shougo/dein.vim
@@ -13,8 +18,9 @@ call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
 
-" You can specify revision/branch/tag.
-call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+call dein#add('kassio/neoterm')
+
+call dein#add('rust-lang/rust.vim')
 
 " Required:
 call dein#end()
