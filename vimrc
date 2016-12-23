@@ -145,16 +145,7 @@ autocmd BufNewFile,BufRead *.mml set ft=javascript
 
 " Rust
 NeoBundle 'wting/rust.vim'
-NeoBundle 'phildawes/racer', {
-\   'build' : {
-\     'mac': 'cargo build --release',
-\     'unix': 'cargo build --release',
-\   }
-\ }
 set hidden
-let g:racer_cmd = $HOME."/.vim/bundle/racer/target/release/racer"
-let $RUST_SRC_PATH = $HOME."/code/rust/src/"
-
 
 " Toml
 NeoBundle 'cespare/vim-toml'
